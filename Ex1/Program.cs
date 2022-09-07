@@ -5,21 +5,10 @@
 
 void PrintNumbers(int m, int n)
 {
-
-    if (n > m)
+    if (m <= n)
     {
-        if (m == n)
-        return;
-        Console.Write($"{m}\t");
-        PrintNumbers(m + 1, n);
-    }
-
-    if (m > n)
-    {
-        if (n == m)
-        return;
-        Console.Write($"{n}\t");
-        PrintNumbers(m, n + 1);
+       Console.Write($"{m}\t"); 
+       PrintNumbers(m+1, n);
     }
 }
-PrintNumbers (1,5);
+PrintNumbers(1, 10);
